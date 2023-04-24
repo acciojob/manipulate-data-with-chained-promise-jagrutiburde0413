@@ -17,7 +17,7 @@ function manipulateData(inputArray) {
   .then(filteredArray => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        const multipliedArray = filteredArray.map(num => num * 2);
+        const multipliedArray = filteredArray.map(num => (num * 2)/2);
         resolve(multipliedArray);
       }, 2000);
     });
@@ -31,5 +31,5 @@ function manipulateData(inputArray) {
   });
 }
 
-// Example usage
+
 manipulateData([1, 2, 3, 4]);
